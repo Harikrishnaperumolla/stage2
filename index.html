@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h4>Task - 1:</h4>
+    <p> Using basic HTML-5 tags create a Video controller which plays video and Audio controller which plays audio format and make sure all the video and audio formats should be supported by all the browsers.</p>
+    <video width="320" height="240" auto controls id="video">
+  <source src="movie.mp4" type="video/mp4">
+</video>
+<br>
+<button type="button" name="button" onclick="play()">play</button>
+<button type="button" name="button" onclick="pause()">pause</button>
+<br>
+<br>
+
+<h4>Task - 2:</h4>
+<p>Add a button to the html file that plays the video when we click on the button and pauses the video when we click on it. Apply the same for the audio controller.Also make sure to use the Browser object model.
+</p>
+<audio width="320" height="240" auto controls id="audio">
+<source src="song.mp3" type="audio/mp3">
+</audio>
+<br>
+<br>
+<button type="button" name="button" onclick="play()">play</button>
+<button type="button" name="button" onclick="pause()">pause</button>
+  </body>
+  <script type="text/javascript">
+  function play(){
+    var
+    vid=document.getElementById('video');
+    vid.play();
+  }
+  function pause(){
+    var
+    vid=document.getElementById('video');
+    vid.pause();
+  }
+  function play(){
+    var
+    vid=document.getElementById('audio');
+    vid.play();
+  }
+  function pause(){
+    var
+    vid=document.getElementById('audio');
+    vid.pause();
+  }
+
+  </script>
+</html>
