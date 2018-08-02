@@ -24,8 +24,8 @@
 </audio>
 <br>
 <br>
-<button type="button" name="button" onclick="play()">play</button>
-<button type="button" name="button" onclick="pause()">pause</button>
+<button type="button" name="button" onclick="song()">play</button>
+<button type="button" name="button" onclick="resume()">pause</button>
   </body>
   <script type="text/javascript">
   function play(){
@@ -38,16 +38,17 @@
     vid=document.getElementById('video');
     vid.pause();
   }
-  function play(){
-    var
-    vid=document.getElementById('audio');
-    vid.play();
-  }
-  function pause(){
-    var
-    vid=document.getElementById('audio');
-    vid.pause();
-  }
-
   </script>
+  <script type="text/javascript">
+    function song(){
+      var
+      add=document.getElementById('audio');
+      add.play();
+    }
+    function resume(){
+      var
+      add=document.getElementById('audio');
+      add.pause();
+    }
+</script>
 </html>
